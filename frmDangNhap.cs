@@ -50,33 +50,33 @@ namespace Nhom5_QuanLyKhachSan
 
             try
             {
-                // 2. Mã hóa mật khẩu người dùng nhập vào để so sánh với DB
+                // 2. Mã hóa mật khẩu người dùng nhập vào
                 string passwordHash = CalculateSHA256(txtMatKhau.Text);
 
-                // 3. Tạo câu truy vấn SQL
-                // Lưu ý: Cần đảm bảo lớp Database của bạn có phương thức thực thi truy vấn trả về DataTable (ví dụ: GetData, ExecuteQuery...)
-                string sql = string.Format("SELECT * FROM NHANVIEN WHERE TENDANGNHAP = '{0}' AND MATKHAU = '{1}'",
+                // 3. Tạo câu truy vấn SQL (Thêm QUANLYKS. để tránh lỗi không tìm thấy bảng)
+                string sql = string.Format("SELECT * FROM QUANLYKS.NHANVIEN WHERE TENDANGNHAP = '{0}' AND MATKHAU = '{1}'",
                                             txtTenDangNhap.Text, passwordHash);
 
-                // GỌI HÀM LẤY DỮ LIỆU TỪ LỚP DATABASE CỦA BẠN
-                // Giả sử lớp Database của bạn có hàm 'GetData' trả về DataTable. 
-                // Nếu tên hàm khác (ví dụ: GetDataTable, Read...), hãy sửa lại dòng dưới đây.
+                // Gọi hàm lấy dữ liệu
                 DataTable dt = Database.GetData(sql);
 
                 // 4. Kiểm tra kết quả
+                // Sau khi có DataTable (dt) từ Database:
                 if (dt != null && dt.Rows.Count > 0)
                 {
-                    // Lấy thông tin nhân viên nếu cần lưu phiên làm việc
-                    string tenNhanVien = dt.Rows[0]["HOTEN"].ToString();
-                    string quyenHan = dt.Rows[0]["CHUCVU"].ToString();
+                    // 1. LƯU THÔNG TIN VÀO SESSION (Bắt buộc)
+                    Session.MaNV = dt.Rows[0]["MANV"].ToString();
+                    Session.HoTen = dt.Rows[0]["HOTEN"].ToString();
+                    Session.ChucVu = dt.Rows[0]["CHUCVU"].ToString();
+                    Session.TenDangNhap = dt.Rows[0]["TENDANGNHAP"].ToString();
 
-                    MessageBox.Show("Đăng nhập thành công!\nXin chào: " + tenNhanVien, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Đăng nhập thành công!\nXin chào: " + Session.HoTen, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                    // Mở form chính (Form Main) tại đây
-                    // frmMain f = new frmMain();
-                    // f.Show();
+                    // 2. MỞ FORM PROFILE (Thay vì mở frmMain)
+                    frmProfile f = new frmProfile();
+                    f.Show();
 
-                    this.Hide(); // Ẩn form đăng nhập
+                    this.Hide(); // Ẩn form đăng nhập đi
                 }
                 else
                 {
@@ -89,7 +89,6 @@ namespace Nhom5_QuanLyKhachSan
             {
                 MessageBox.Show("Lỗi kết nối hoặc truy vấn: " + ex.Message, "Lỗi hệ thống", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
         }
         // --- HÀM HỖ TRỢ MÃ HÓA SHA256 ---
         private string CalculateSHA256(string rawData)
@@ -110,7 +109,11 @@ namespace Nhom5_QuanLyKhachSan
         }
         private void btnTaoTaiKhoan_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Vui lòng liên hệ Admin để cấp tài khoản nhân viên.", "Thông báo");
+            // Mới: Mở form đăng ký
+            frmDangKy f = new frmDangKy();
+            this.Hide();     // Ẩn form đăng nhập tạm thời
+            f.ShowDialog();  // Hiện form đăng ký (chờ xử lý xong)
+            this.Show();     // Hiện lại form đăng nhập sau khi tắt form đăng ký
         }
     }
 }

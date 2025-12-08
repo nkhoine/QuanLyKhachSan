@@ -3,28 +3,20 @@
   "WorkspaceRootPath": "D:\\HOCTAP\\HK5\\BM_CSDL\\Nhom5_QuanLyKhachSan\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{D4DF0FDF-89AC-47A3-BB00-4A5DD0E5DD47}|Nhom5_QuanLyKhachSan.csproj|d:\\hoctap\\hk5\\bm_csdl\\nhom5_quanlykhachsan\\frmprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D4DF0FDF-89AC-47A3-BB00-4A5DD0E5DD47}|Nhom5_QuanLyKhachSan.csproj|solutionrelative:frmprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D4DF0FDF-89AC-47A3-BB00-4A5DD0E5DD47}|Nhom5_QuanLyKhachSan.csproj|d:\\hoctap\\hk5\\bm_csdl\\nhom5_quanlykhachsan\\frmdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D4DF0FDF-89AC-47A3-BB00-4A5DD0E5DD47}|Nhom5_QuanLyKhachSan.csproj|solutionrelative:frmdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D4DF0FDF-89AC-47A3-BB00-4A5DD0E5DD47}|Nhom5_QuanLyKhachSan.csproj|d:\\hoctap\\hk5\\bm_csdl\\nhom5_quanlykhachsan\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D4DF0FDF-89AC-47A3-BB00-4A5DD0E5DD47}|Nhom5_QuanLyKhachSan.csproj|solutionrelative:login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D4DF0FDF-89AC-47A3-BB00-4A5DD0E5DD47}|Nhom5_QuanLyKhachSan.csproj|d:\\hoctap\\hk5\\bm_csdl\\nhom5_quanlykhachsan\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{D4DF0FDF-89AC-47A3-BB00-4A5DD0E5DD47}|Nhom5_QuanLyKhachSan.csproj|solutionrelative:login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D4DF0FDF-89AC-47A3-BB00-4A5DD0E5DD47}|Nhom5_QuanLyKhachSan.csproj|d:\\hoctap\\hk5\\bm_csdl\\nhom5_quanlykhachsan\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D4DF0FDF-89AC-47A3-BB00-4A5DD0E5DD47}|Nhom5_QuanLyKhachSan.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D4DF0FDF-89AC-47A3-BB00-4A5DD0E5DD47}|Nhom5_QuanLyKhachSan.csproj|d:\\hoctap\\hk5\\bm_csdl\\nhom5_quanlykhachsan\\frmdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D4DF0FDF-89AC-47A3-BB00-4A5DD0E5DD47}|Nhom5_QuanLyKhachSan.csproj|solutionrelative:frmdangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D4DF0FDF-89AC-47A3-BB00-4A5DD0E5DD47}|Nhom5_QuanLyKhachSan.csproj|d:\\hoctap\\hk5\\bm_csdl\\nhom5_quanlykhachsan\\database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D4DF0FDF-89AC-47A3-BB00-4A5DD0E5DD47}|Nhom5_QuanLyKhachSan.csproj|solutionrelative:database.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D4DF0FDF-89AC-47A3-BB00-4A5DD0E5DD47}|Nhom5_QuanLyKhachSan.csproj|d:\\hoctap\\hk5\\bm_csdl\\nhom5_quanlykhachsan\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4DF0FDF-89AC-47A3-BB00-4A5DD0E5DD47}|Nhom5_QuanLyKhachSan.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,45 +26,44 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Login.cs",
-              "DocumentMoniker": "D:\\HOCTAP\\HK5\\BM_CSDL\\Nhom5_QuanLyKhachSan\\Login.cs",
-              "RelativeDocumentMoniker": "Login.cs",
-              "ToolTip": "D:\\HOCTAP\\HK5\\BM_CSDL\\Nhom5_QuanLyKhachSan\\Login.cs",
-              "RelativeToolTip": "Login.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAYwDEAAACaAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "frmProfile.cs [Design]",
+              "DocumentMoniker": "D:\\HOCTAP\\HK5\\BM_CSDL\\Nhom5_QuanLyKhachSan\\frmProfile.cs",
+              "RelativeDocumentMoniker": "frmProfile.cs",
+              "ToolTip": "D:\\HOCTAP\\HK5\\BM_CSDL\\Nhom5_QuanLyKhachSan\\frmProfile.cs [Design]",
+              "RelativeToolTip": "frmProfile.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T21:49:27.474Z",
+              "WhenOpened": "2025-12-08T03:28:10.484Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "frmDangNhap.cs",
+              "DocumentMoniker": "D:\\HOCTAP\\HK5\\BM_CSDL\\Nhom5_QuanLyKhachSan\\frmDangNhap.cs",
+              "RelativeDocumentMoniker": "frmDangNhap.cs",
+              "ToolTip": "D:\\HOCTAP\\HK5\\BM_CSDL\\Nhom5_QuanLyKhachSan\\frmDangNhap.cs",
+              "RelativeToolTip": "frmDangNhap.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAA1wBoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-08T03:25:37.715Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Login.cs [Design]",
-              "DocumentMoniker": "D:\\HOCTAP\\HK5\\BM_CSDL\\Nhom5_QuanLyKhachSan\\Login.cs",
-              "RelativeDocumentMoniker": "Login.cs",
-              "ToolTip": "D:\\HOCTAP\\HK5\\BM_CSDL\\Nhom5_QuanLyKhachSan\\Login.cs [Design]",
-              "RelativeToolTip": "Login.cs [Design]",
+              "Title": "frmDangNhap.cs [Design]",
+              "DocumentMoniker": "D:\\HOCTAP\\HK5\\BM_CSDL\\Nhom5_QuanLyKhachSan\\frmDangNhap.cs",
+              "RelativeDocumentMoniker": "frmDangNhap.cs",
+              "ToolTip": "D:\\HOCTAP\\HK5\\BM_CSDL\\Nhom5_QuanLyKhachSan\\frmDangNhap.cs [Design]",
+              "RelativeToolTip": "frmDangNhap.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T21:49:25.541Z",
+              "WhenOpened": "2025-12-08T03:25:34.065Z",
               "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Database.cs",
-              "DocumentMoniker": "D:\\HOCTAP\\HK5\\BM_CSDL\\Nhom5_QuanLyKhachSan\\Database.cs",
-              "RelativeDocumentMoniker": "Database.cs",
-              "ToolTip": "D:\\HOCTAP\\HK5\\BM_CSDL\\Nhom5_QuanLyKhachSan\\Database.cs",
-              "RelativeToolTip": "Database.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAADBAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T21:37:08.982Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -82,35 +73,10 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "D:\\HOCTAP\\HK5\\BM_CSDL\\Nhom5_QuanLyKhachSan\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA1AAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T21:23:39.703Z",
+              "WhenOpened": "2025-12-08T03:24:41.683Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "frmDangNhap.cs",
-              "DocumentMoniker": "D:\\HOCTAP\\HK5\\BM_CSDL\\Nhom5_QuanLyKhachSan\\frmDangNhap.cs",
-              "RelativeDocumentMoniker": "frmDangNhap.cs",
-              "ToolTip": "D:\\HOCTAP\\HK5\\BM_CSDL\\Nhom5_QuanLyKhachSan\\frmDangNhap.cs",
-              "RelativeToolTip": "frmDangNhap.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAA7wC8AAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T21:00:53.435Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "frmDangNhap.cs [Design]",
-              "DocumentMoniker": "D:\\HOCTAP\\HK5\\BM_CSDL\\Nhom5_QuanLyKhachSan\\frmDangNhap.cs",
-              "RelativeDocumentMoniker": "frmDangNhap.cs",
-              "ToolTip": "D:\\HOCTAP\\HK5\\BM_CSDL\\Nhom5_QuanLyKhachSan\\frmDangNhap.cs [Design]",
-              "RelativeToolTip": "frmDangNhap.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-04T20:51:27.862Z",
-              "EditorCaption": " [Design]"
             }
           ]
         }

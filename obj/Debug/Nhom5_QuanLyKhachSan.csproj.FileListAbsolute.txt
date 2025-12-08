@@ -27,6 +27,9 @@ D:\HOCTAP\HK5\BM_CSDL\Nhom5_QuanLyKhachSan\bin\Debug\System.Text.Json.xml
 D:\HOCTAP\HK5\BM_CSDL\Nhom5_QuanLyKhachSan\bin\Debug\System.Threading.Tasks.Extensions.xml
 D:\HOCTAP\HK5\BM_CSDL\Nhom5_QuanLyKhachSan\bin\Debug\System.ValueTuple.xml
 D:\HOCTAP\HK5\BM_CSDL\Nhom5_QuanLyKhachSan\obj\Debug\Nhom5_QuanLyKhachSan.csproj.AssemblyReference.cache
+D:\HOCTAP\HK5\BM_CSDL\Nhom5_QuanLyKhachSan\obj\Debug\Nhom5_QuanLyKhachSan.frmDangKy.resources
+D:\HOCTAP\HK5\BM_CSDL\Nhom5_QuanLyKhachSan\obj\Debug\Nhom5_QuanLyKhachSan.frmDangNhap.resources
+D:\HOCTAP\HK5\BM_CSDL\Nhom5_QuanLyKhachSan\obj\Debug\Nhom5_QuanLyKhachSan.frmProfile.resources
 D:\HOCTAP\HK5\BM_CSDL\Nhom5_QuanLyKhachSan\obj\Debug\Nhom5_QuanLyKhachSan.frmLogin.resources
 D:\HOCTAP\HK5\BM_CSDL\Nhom5_QuanLyKhachSan\obj\Debug\Nhom5_QuanLyKhachSan.Properties.Resources.resources
 D:\HOCTAP\HK5\BM_CSDL\Nhom5_QuanLyKhachSan\obj\Debug\Nhom5_QuanLyKhachSan.csproj.GenerateResource.cache
@@ -34,5 +37,3 @@ D:\HOCTAP\HK5\BM_CSDL\Nhom5_QuanLyKhachSan\obj\Debug\Nhom5_QuanLyKhachSan.csproj
 D:\HOCTAP\HK5\BM_CSDL\Nhom5_QuanLyKhachSan\obj\Debug\Nhom5_Qu.400058D2.Up2Date
 D:\HOCTAP\HK5\BM_CSDL\Nhom5_QuanLyKhachSan\obj\Debug\Nhom5_QuanLyKhachSan.exe
 D:\HOCTAP\HK5\BM_CSDL\Nhom5_QuanLyKhachSan\obj\Debug\Nhom5_QuanLyKhachSan.pdb
-D:\HOCTAP\HK5\BM_CSDL\Nhom5_QuanLyKhachSan\obj\Debug\Nhom5_QuanLyKhachSan.exe.config
-D:\HOCTAP\HK5\BM_CSDL\Nhom5_QuanLyKhachSan\obj\Debug\Nhom5_QuanLyKhachSan.frmDangNhap.resources
