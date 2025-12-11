@@ -1,0 +1,121 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\HOCTAP\\HK5\\BM_CSDL\\DoAnMoi\\QuanLyKhachSan\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D4DF0FDF-89AC-47A3-BB00-4A5DD0E5DD47}|Nhom5_QuanLyKhachSan.csproj|d:\\hoctap\\hk5\\bm_csdl\\doanmoi\\quanlykhachsan\\frmdoanhthu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4DF0FDF-89AC-47A3-BB00-4A5DD0E5DD47}|Nhom5_QuanLyKhachSan.csproj|solutionrelative:frmdoanhthu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4DF0FDF-89AC-47A3-BB00-4A5DD0E5DD47}|Nhom5_QuanLyKhachSan.csproj|d:\\hoctap\\hk5\\bm_csdl\\doanmoi\\quanlykhachsan\\frmdoanhthu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D4DF0FDF-89AC-47A3-BB00-4A5DD0E5DD47}|Nhom5_QuanLyKhachSan.csproj|solutionrelative:frmdoanhthu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4DF0FDF-89AC-47A3-BB00-4A5DD0E5DD47}|Nhom5_QuanLyKhachSan.csproj|d:\\hoctap\\hk5\\bm_csdl\\doanmoi\\quanlykhachsan\\frmnhatkyhethong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4DF0FDF-89AC-47A3-BB00-4A5DD0E5DD47}|Nhom5_QuanLyKhachSan.csproj|solutionrelative:frmnhatkyhethong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4DF0FDF-89AC-47A3-BB00-4A5DD0E5DD47}|Nhom5_QuanLyKhachSan.csproj|D:\\HOCTAP\\HK5\\BM_CSDL\\DoAnMoi\\QuanLyKhachSan\\frmnhatkyhethong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D4DF0FDF-89AC-47A3-BB00-4A5DD0E5DD47}|Nhom5_QuanLyKhachSan.csproj|solutionrelative:frmnhatkyhethong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4DF0FDF-89AC-47A3-BB00-4A5DD0E5DD47}|Nhom5_QuanLyKhachSan.csproj|D:\\HOCTAP\\HK5\\BM_CSDL\\DoAnMoi\\QuanLyKhachSan\\frmnhatkyhethong.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4DF0FDF-89AC-47A3-BB00-4A5DD0E5DD47}|Nhom5_QuanLyKhachSan.csproj|solutionrelative:frmnhatkyhethong.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "frmDoanhThu.cs",
+              "DocumentMoniker": "D:\\HOCTAP\\HK5\\BM_CSDL\\DoAnMoi\\QuanLyKhachSan\\frmDoanhThu.cs",
+              "RelativeDocumentMoniker": "frmDoanhThu.cs",
+              "ToolTip": "D:\\HOCTAP\\HK5\\BM_CSDL\\DoAnMoi\\QuanLyKhachSan\\frmDoanhThu.cs",
+              "RelativeToolTip": "frmDoanhThu.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAowEIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T16:30:35.485Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "frmDoanhThu.cs [Design]",
+              "DocumentMoniker": "D:\\HOCTAP\\HK5\\BM_CSDL\\DoAnMoi\\QuanLyKhachSan\\frmDoanhThu.cs",
+              "RelativeDocumentMoniker": "frmDoanhThu.cs",
+              "ToolTip": "D:\\HOCTAP\\HK5\\BM_CSDL\\DoAnMoi\\QuanLyKhachSan\\frmDoanhThu.cs [Design]",
+              "RelativeToolTip": "frmDoanhThu.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T16:30:33.523Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "frmNhatKyHeThong.cs",
+              "DocumentMoniker": "D:\\HOCTAP\\HK5\\BM_CSDL\\DoAnMoi\\QuanLyKhachSan\\frmNhatKyHeThong.cs",
+              "RelativeDocumentMoniker": "frmNhatKyHeThong.cs",
+              "ToolTip": "D:\\HOCTAP\\HK5\\BM_CSDL\\DoAnMoi\\QuanLyKhachSan\\frmNhatKyHeThong.cs",
+              "RelativeToolTip": "frmNhatKyHeThong.cs",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAYwGgAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-11T16:12:13.345Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "frmNhatKyHeThong.cs [Design]",
+              "DocumentMoniker": "D:\\HOCTAP\\HK5\\BM_CSDL\\DoAnMoi\\QuanLyKhachSan\\frmNhatKyHeThong.cs",
+              "RelativeDocumentMoniker": "frmNhatKyHeThong.cs",
+              "ToolTip": "D:\\HOCTAP\\HK5\\BM_CSDL\\DoAnMoi\\QuanLyKhachSanFINAL\\QuanLyKhachSan-main\\frmNhatKyHeThong.cs [Design]",
+              "RelativeToolTip": "..\\QuanLyKhachSanFINAL\\QuanLyKhachSan-main\\frmNhatKyHeThong.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T16:35:47.856Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "frmNhatKyHeThong.Designer.cs",
+              "DocumentMoniker": "D:\\HOCTAP\\HK5\\BM_CSDL\\DoAnMoi\\QuanLyKhachSan\\frmNhatKyHeThong.Designer.cs",
+              "RelativeDocumentMoniker": "frmNhatKyHeThong.Designer.cs",
+              "ToolTip": "D:\\HOCTAP\\HK5\\BM_CSDL\\DoAnMoi\\QuanLyKhachSan\\frmNhatKyHeThong.Designer.cs",
+              "RelativeToolTip": "frmNhatKyHeThong.Designer.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAAABYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-10T16:41:21.181Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 437,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 211,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

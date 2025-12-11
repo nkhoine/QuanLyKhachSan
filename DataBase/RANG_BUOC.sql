@@ -1,0 +1,142 @@
+--------------------------------------------------------
+-- FILE: RANG_BUOC_FIXED.sql
+-- KET NOI: QUANLYKS / 123456
+--------------------------------------------------------
+
+-- 1. PACKAGE CONTEXT
+CREATE OR REPLACE PACKAGE PKG_SECURITY AS
+    PROCEDURE SET_USER_ID(p_manv IN VARCHAR2);
+END PKG_SECURITY;
+/
+CREATE OR REPLACE PACKAGE BODY PKG_SECURITY AS
+    PROCEDURE SET_USER_ID(p_manv IN VARCHAR2) IS
+    BEGIN
+        DBMS_SESSION.SET_CONTEXT('QLKS_APP', 'CURRENT_USER_ID', p_manv);
+    END;
+END PKG_SECURITY;
+/
+
+-- 2. FUNCTION POLICY
+CREATE OR REPLACE FUNCTION HOADON_POLICY (
+    sch VARCHAR2,
+    obj VARCHAR2) RETURN VARCHAR2
+AS
+    v_user_id   VARCHAR2(30);
+    v_chuc_vu   VARCHAR2(30);
+BEGIN
+    v_user_id := SYS_CONTEXT('QLKS_APP', 'CURRENT_USER_ID');
+    
+    -- Neu chua dang nhap qua App (Context null) -> Chan
+    IF v_user_id IS NULL THEN
+        RETURN '1 = 0'; 
+    END IF;
+
+    BEGIN
+        SELECT CHUCVU INTO v_chuc_vu
+        FROM NHANVIEN -- Da dang trong user QUANLYKS nen khong can prefix
+        WHERE MANV = v_user_id;
+    EXCEPTION
+        WHEN NO_DATA_FOUND THEN
+            RETURN '1 = 0';
+    END;
+
+    IF UPPER(TRIM(v_chuc_vu)) = 'ADMIN' THEN
+        RETURN '1 = 1';
+    END IF;
+
+    -- Ngan chan SQL Injection co ban bang cach dung Quote
+    RETURN 'MANV = ''' || v_user_id || '''';
+END;
+/
+
+-- 3. ADD POLICY
+BEGIN
+    DBMS_RLS.ADD_POLICY(
+        object_schema   => 'QUANLYKS',
+        object_name     => 'HOADON',
+        policy_name     => 'POL_HOADON',
+        function_schema => 'QUANLYKS',
+        policy_function => 'HOADON_POLICY',
+        statement_types => 'SELECT'
+    );
+END;
+/
+
+-- 4. GRANT QUYEN CHO ROLE (Role da duoc tao o buoc 1)
+-- ADMIN
+GRANT SELECT, INSERT, UPDATE, DELETE ON LOAIPHONG      TO ROLE_ADMIN;
+GRANT SELECT, INSERT, UPDATE, DELETE ON PHONG          TO ROLE_ADMIN;
+GRANT SELECT, INSERT, UPDATE, DELETE ON NHANVIEN       TO ROLE_ADMIN;
+GRANT SELECT, INSERT, UPDATE, DELETE ON KHACHHANG      TO ROLE_ADMIN;
+GRANT SELECT, INSERT, UPDATE, DELETE ON DATPHONG       TO ROLE_ADMIN;
+GRANT SELECT, INSERT, UPDATE, DELETE ON DICHVU         TO ROLE_ADMIN;
+GRANT SELECT, INSERT, UPDATE, DELETE ON HOADON         TO ROLE_ADMIN;
+GRANT SELECT, INSERT, UPDATE, DELETE ON CHITIET_DICHVU TO ROLE_ADMIN;
+
+-- NHANVIEN
+GRANT SELECT ON LOAIPHONG TO ROLE_NHANVIEN;
+GRANT SELECT ON PHONG     TO ROLE_NHANVIEN;
+GRANT SELECT, INSERT, UPDATE ON KHACHHANG      TO ROLE_NHANVIEN;
+GRANT SELECT, INSERT, UPDATE ON DATPHONG       TO ROLE_NHANVIEN;
+GRANT SELECT, INSERT, UPDATE ON HOADON         TO ROLE_NHANVIEN;
+GRANT SELECT, INSERT, UPDATE ON CHITIET_DICHVU TO ROLE_NHANVIEN;
+
+
+-- 5. TRIGGER AUDIT NHANVIEN
+CREATE OR REPLACE TRIGGER TG_NV_AUDIT
+AFTER INSERT OR UPDATE OR DELETE ON NHANVIEN
+FOR EACH ROW
+DECLARE
+    v_old    VARCHAR2(2000);
+    v_new    VARCHAR2(2000);
+    v_action VARCHAR2(10);
+    v_manv   VARCHAR2(10);
+BEGIN
+    v_manv  := SYS_CONTEXT('QLKS_APP', 'CURRENT_USER_ID');
+
+    IF INSERTING THEN
+        v_action := 'INSERT';
+        -- Dung NVL de tranh bi NULL ca chuoi
+        v_new := 'MANV=' || :NEW.MANV || ', HOTEN=' || :NEW.HOTEN || ', CHUCVU=' || NVL(:NEW.CHUCVU, 'NULL');
+    ELSIF UPDATING THEN
+        v_action := 'UPDATE';
+        v_old := 'MANV=' || :OLD.MANV || ', HOTEN=' || :OLD.HOTEN || ', CHUCVU=' || NVL(:OLD.CHUCVU, 'NULL');
+        v_new := 'MANV=' || :NEW.MANV || ', HOTEN=' || :NEW.HOTEN || ', CHUCVU=' || NVL(:NEW.CHUCVU, 'NULL');
+    ELSIF DELETING THEN
+        v_action := 'DELETE';
+        v_old := 'MANV=' || :OLD.MANV || ', HOTEN=' || :OLD.HOTEN || ', CHUCVU=' || NVL(:OLD.CHUCVU, 'NULL');
+    END IF;
+
+    INSERT INTO LOG_AUDIT(MANV, ACTION_TIME, ACTION_TYPE, TABLE_NAME, OLD_DATA, NEW_DATA)
+    VALUES (v_manv, SYSTIMESTAMP, v_action, 'NHANVIEN', v_old, v_new);
+END;
+/
+
+-- 6. TRIGGER AUDIT HOADON
+CREATE OR REPLACE TRIGGER TG_HD_AUDIT
+AFTER INSERT OR UPDATE OR DELETE ON HOADON
+FOR EACH ROW
+DECLARE
+    v_old    VARCHAR2(2000);
+    v_new    VARCHAR2(2000);
+    v_action VARCHAR2(10);
+    v_manv   VARCHAR2(10);
+BEGIN
+    v_manv  := SYS_CONTEXT('QLKS_APP', 'CURRENT_USER_ID');
+
+    IF INSERTING THEN
+        v_action := 'INSERT';
+        v_new := 'MAHD=' || :NEW.MAHD || ', TONGTIEN=' || :NEW.TONGTIEN;
+    ELSIF UPDATING THEN
+        v_action := 'UPDATE';
+        v_old := 'MAHD=' || :OLD.MAHD || ', TONGTIEN=' || :OLD.TONGTIEN;
+        v_new := 'MAHD=' || :NEW.MAHD || ', TONGTIEN=' || :NEW.TONGTIEN;
+    ELSIF DELETING THEN
+        v_action := 'DELETE';
+        v_old := 'MAHD=' || :OLD.MAHD || ', TONGTIEN=' || :OLD.TONGTIEN;
+    END IF;
+
+    INSERT INTO LOG_AUDIT(MANV, ACTION_TIME, ACTION_TYPE, TABLE_NAME, OLD_DATA, NEW_DATA)
+    VALUES (v_manv, SYSTIMESTAMP, v_action, 'HOADON', v_old, v_new);
+END;
+/
